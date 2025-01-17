@@ -21,7 +21,7 @@ double PayOff::operator()(double spot) const {
 	case call:
 		return max(spot - Strike,0.0);
 	case put:
-		return min(Strike - spot,0.00);
+		return max(Strike - spot,0.00);
 	default:
 		throw("Unknown option type.");
 	}
