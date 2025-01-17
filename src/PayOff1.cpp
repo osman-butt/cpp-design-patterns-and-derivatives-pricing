@@ -26,3 +26,11 @@ double PayOff::operator()(double spot) const {
 		throw("Unknown option type.");
 	}
 }
+
+double PayOff::GetStrike() const {
+	return Strike;
+}
+
+PayOff::OptionType PayOff::GetTheOptionsType() const {
+	return TheOptionsType;
+}

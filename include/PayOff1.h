@@ -6,6 +6,8 @@ public:
 	enum OptionType { call, put };
 	PayOff(double Strike_, OptionType TheOptionsType_);
 	double operator()(double Spot) const; // Overloaded operator() method
+	double GetStrike() const;
+	OptionType GetTheOptionsType() const;
 private:
 	double Strike;
 	OptionType TheOptionsType;
