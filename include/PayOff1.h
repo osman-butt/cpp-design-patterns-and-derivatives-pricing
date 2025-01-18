@@ -3,7 +3,7 @@
 class PayOff
 {
 public:
-	enum OptionType { call, put };
+	enum OptionType { call, put, digitalCall, digitalPut };
 	PayOff(double Strike_, OptionType TheOptionsType_);
 	double operator()(double Spot) const; // Overloaded operator() method
 	double GetStrike() const;
