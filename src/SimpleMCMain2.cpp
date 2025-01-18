@@ -24,6 +24,8 @@ int main()
 	cin >> NumberOfPaths;
 	PayOff callPayOff(Strike, PayOff::call);
 	PayOff putPayOff(Strike, PayOff::put);
+	PayOff digitalCallPayOff(Strike, PayOff::digitalCall);
+	PayOff digitalPutPayOff(Strike, PayOff::digitalPut);
 	double resultCall = SimpleMonteCarlo2(callPayOff,
 		Expiry,
 		Spot,
@@ -36,10 +38,23 @@ int main()
 		Vol,
 		r,
 		NumberOfPaths);
-	cout << "the prices are " << resultCall
-		<< " for the call and "
-		<< resultPut
-		<< " for the put\n";
+	double resultDigitalCall = SimpleMonteCarlo2(digitalCallPayOff,
+		Expiry,
+		Spot,
+		Vol,
+		r,
+		NumberOfPaths);
+	double resultDigitalPut = SimpleMonteCarlo2(digitalPutPayOff,
+		Expiry,
+		Spot,
+		Vol,
+		r,
+		NumberOfPaths);
+	cout << "Prices:\n";
+	cout << "Call: " << resultCall << "\n";
+	cout << "Put: " << resultPut << "\n";
+	cout << "Digital Call: " << resultDigitalCall << "\n";
+	cout << "Digital Put: " << resultDigitalPut << "\n";
 	double tmp;
 	cin >> tmp;
 	return 0;
