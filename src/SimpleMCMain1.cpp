@@ -30,34 +30,34 @@ double SimpleMonteCarlo1(double Expiry,
 	return mean;
 }
 
-int main()
-{
-	double Expiry;
-	double Strike;
-	double Spot;
-	double Vol;
-	double r;
-	unsigned long NumberOfPaths;
-	cout << "\nEnter expiry\n";
-	cin >> Expiry;
-	cout << "\nEnter strike\n";
-	cin >> Strike;
-	cout << "\nEnter spot\n";
-	cin >> Spot;
-	cout << "\nEnter vol\n";
-	cin >> Vol;
-	cout << "\nr\n";
-	cin >> r;
-	cout << "\nNumber of paths\n";
-	cin >> NumberOfPaths;
-	double result = SimpleMonteCarlo1(Expiry,
-		Strike,
-		Spot,
-		Vol,
-		r,
-		NumberOfPaths);
-	cout << "the price is " << result << "\n";
-	double tmp;
-	cin >> tmp;
-	return 0;
-}
+//int main()
+//{
+//	double Expiry;
+//	double Strike;
+//	double Spot;
+//	double Vol;
+//	double r;
+//	unsigned long NumberOfPaths;
+//	cout << "\nEnter expiry\n";
+//	cin >> Expiry;
+//	cout << "\nEnter strike\n";
+//	cin >> Strike;
+//	cout << "\nEnter spot\n";
+//	cin >> Spot;
+//	cout << "\nEnter vol\n";
+//	cin >> Vol;
+//	cout << "\nr\n";
+//	cin >> r;
+//	cout << "\nNumber of paths\n";
+//	cin >> NumberOfPaths;
+//	double result = SimpleMonteCarlo1(Expiry,
+//		Strike,
+//		Spot,
+//		Vol,
+//		r,
+//		NumberOfPaths);
+//	cout << "the price is " << result << "\n";
+//	double tmp;
+//	cin >> tmp;
+//	return 0;
+//}
