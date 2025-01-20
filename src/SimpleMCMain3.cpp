@@ -1,5 +1,5 @@
+#include "../include/SimpleMC2.h"
 #include<iostream>
-#include "../include/SimpleMC.h"
 using namespace std;
 
 //int main()
@@ -22,10 +22,8 @@ using namespace std;
 //	cin >> r;
 //	cout << "\nNumber of paths\n";
 //	cin >> NumberOfPaths;
-//	PayOff callPayOff(Strike, PayOff::call);
-//	PayOff putPayOff(Strike, PayOff::put);
-//	PayOff digitalCallPayOff(Strike, PayOff::digitalCall);
-//	PayOff digitalPutPayOff(Strike, PayOff::digitalPut);
+//	PayOffCall callPayOff(Strike);
+//	PayOffPut putPayOff(Strike);
 //	double resultCall = SimpleMonteCarlo2(callPayOff,
 //		Expiry,
 //		Spot,
@@ -38,23 +36,10 @@ using namespace std;
 //		Vol,
 //		r,
 //		NumberOfPaths);
-//	double resultDigitalCall = SimpleMonteCarlo2(digitalCallPayOff,
-//		Expiry,
-//		Spot,
-//		Vol,
-//		r,
-//		NumberOfPaths);
-//	double resultDigitalPut = SimpleMonteCarlo2(digitalPutPayOff,
-//		Expiry,
-//		Spot,
-//		Vol,
-//		r,
-//		NumberOfPaths);
-//	cout << "Prices:\n";
-//	cout << "Call: " << resultCall << "\n";
-//	cout << "Put: " << resultPut << "\n";
-//	cout << "Digital Call: " << resultDigitalCall << "\n";
-//	cout << "Digital Put: " << resultDigitalPut << "\n";
+//
+//	cout << "the prices are " << resultCall <<
+//		" for the call and " << resultPut <<
+//		" for the put\n";
 //	double tmp;
 //	cin >> tmp;
 //	return 0;
