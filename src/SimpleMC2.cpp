@@ -1,4 +1,4 @@
-#include "../include/SimpleMC.h"
+#include "../include/SimpleMC2.h"
 #include "../include/Random1.h"
 #include <cmath>
 
